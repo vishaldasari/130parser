@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<title>Autograder Results</title>
+<link rel="stylesheet" href="https://s3.amazonaws.com/style.instructures.org/s.css" type="text/css">
+<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+<div class="main-content">
+<h3>Setup</h3>
+<code>Initialized</code><br />
+CREATED <em>temporary-directory</em><br />
+EXTRACTING RESOURCES /testdata/run<br />
+COPIED 65 files<br />
+RECEIVED scheme.jar (93220 bytes)<br />
+<h3>Found</h3>
+<code>20 tests</code><br />
+<h3>Test 01</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator all-self-evaluating.scm</code><br />
+<pre>1000
+"Hello"
+#\W
+#\o
+#\r
+#\l
+#\d
+42
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 02</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator church-numbers.scm</code><br />
+<pre>(church-&gt;scheme zero)
+(church-&gt;scheme one)
+(church-&gt;scheme (succ (succ (succ (succ (succ one))))))
+</pre>
+<p><b>Test 02</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>0
+1
+6
+</pre><p>But got:</p>
+<pre>(church-&gt;scheme zero)
+(church-&gt;scheme one)
+(church-&gt;scheme (succ (succ (succ (succ (succ one))))))
+</pre>
+<h3>Test 03</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator compare.scm</code><br />
+<pre>compare.scm:Too few arguments: 1 (expected at least 2)
+#t
+#f
+#f
+compare.scm:Too few arguments: 1 (expected at least 2)
+#t
+#t
+#f
+compare.scm:Too few arguments: 1 (expected at least 2)
+#f
+#t
+#f
+#t
+compare.scm:Too few arguments: 1 (expected at least 2)
+#f
+#t
+#t
+#t
+compare.scm:Too few arguments: 0 (expected at least 2)
+compare.scm:Too few arguments: 1 (expected at least 2)
+compare.scm:Too few arguments: 1 (expected at least 2)
+#t
+#f
+#f
+#f
+#t
+#f
+#f
+#f
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 04</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator conds.scm</code><br />
+<pre>(cond (#t 1 2 3))
+(cond (else 2))
+(cond (val 2) (else 4))
+conds.scm:Not a cons
+(cond (val 2) (else 4))
+</pre>
+<p><b>Test 04</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>3
+2
+2
+4
+</pre><p>But got:</p>
+<pre>(cond (#t 1 2 3))
+(cond (else 2))
+(cond (val 2) (else 4))
+conds.scm:Not a cons
+(cond (val 2) (else 4))
+</pre>
+<h3>Test 05</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator cps-product.scm</code><br />
+<pre>(product (quote (1 2 3 4 5 6 7 8)) display)
+(newline)
+(product (quote (7 3 8 0 9 5 2 2)) display)
+(newline)
+</pre>
+<p><b>Test 05</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>(1 2 3 4 5 6 7 8)
+(2 3 4 5 6 7 8)
+(3 4 5 6 7 8)
+(4 5 6 7 8)
+(5 6 7 8)
+(6 7 8)
+(7 8)
+(8)
+()
+40320
+(7 3 8 0 9 5 2 2)
+(3 8 0 9 5 2 2)
+(8 0 9 5 2 2)
+(0 9 5 2 2)
+0
+</pre><p>But got:</p>
+<pre>(product (quote (1 2 3 4 5 6 7 8)) display)
+(newline)
+(product (quote (7 3 8 0 9 5 2 2)) display)
+(newline)
+</pre>
+<h3>Test 06</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator defines-and-sets.scm</code><br />
+<pre>42
+42
+"3.1415926535897932384626433"
+pi
+pi
+1
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 07</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator empty.scm</code><br />
+<pre></pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 08</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator error.scm</code><br />
+<pre>error.scm:1: Unexpected character: "{"
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 09</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator expression.scm</code><br />
+<pre>wOKING ON this(+ 1 2 3 4 (* 8 8))
+</pre>
+<p><b>Test 09</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>74
+</pre><p>But got:</p>
+<pre>wOKING ON this(+ 1 2 3 4 (* 8 8))
+</pre>
+<h3>Test 10</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator expressions.scm</code><br />
+<pre>486
+wOKING ON this(+ 137 349)
+wOKING ON this(- 1000 334)
+wOKING ON this(* 5 99)
+wOKING ON this(/ 10 5)
+wOKING ON this(+ 27 10)
+wOKING ON this(+ 21 35 12 7)
+wOKING ON this(* 25 4 12)
+wOKING ON this(* 3 5)
+wOKING ON this(* 2 4)
+wOKING ON this(* 2 4)
+</pre>
+<p><b>Test 10</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>486
+486
+666
+495
+2
+37
+75
+1200
+19
+57
+57
+</pre><p>But got:</p>
+<pre>486
+wOKING ON this(+ 137 349)
+wOKING ON this(- 1000 334)
+wOKING ON this(* 5 99)
+wOKING ON this(/ 10 5)
+wOKING ON this(+ 27 10)
+wOKING ON this(+ 21 35 12 7)
+wOKING ON this(* 25 4 12)
+wOKING ON this(* 3 5)
+wOKING ON this(* 2 4)
+wOKING ON this(* 2 4)
+</pre>
+<h3>Test 11</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator lists.scm</code><br />
+<pre>(reverse1 (quote ()))
+(reverse1 (quote ("eddie" "moe" "jack")))
+(reverse2 (quote ("l" "i" "s" "a" "b" "o" "n" "e" "t" "a" "t" "e" "n" "o" "b" "a" "s" "i" "l")))
+(reverse2 (quote (1 2 () (3) ((4)))))
+</pre>
+<p><b>Test 11</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>()
+("jack" "moe" "eddie")
+("l" "i" "s" "a" "b" "o" "n" "e" "t" "a" "t" "e" "n" "o" "b" "a" "s" "i" "l")
+(((4)) (3) () 2 1)
+</pre><p>But got:</p>
+<pre>(reverse1 (quote ()))
+(reverse1 (quote ("eddie" "moe" "jack")))
+(reverse2 (quote ("l" "i" "s" "a" "b" "o" "n" "e" "t" "a" "t" "e" "n" "o" "b" "a" "s" "i" "l")))
+(reverse2 (quote (1 2 () (3) ((4)))))
+</pre>
+<h3>Test 12</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator max.scm</code><br />
+<pre>105
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 13</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator min-max.scm</code><br />
+<pre>3
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 14</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator print-all.scm</code><br />
+<pre>((lambda () (print-all) (print-all 1 2 3 4) (print-all) (print-all 55)))
+</pre>
+<p><b>Test 14</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>1
+2
+3
+4
+55
+done
+</pre><p>But got:</p>
+<pre>((lambda () (print-all) (print-all 1 2 3 4) (print-all) (print-all 55)))
+</pre>
+<h3>Test 15</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator quotes.scm</code><br />
+<pre>a
+b
+100
+(100)
+(quote 100)
+(quote (100))
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 16</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator self-evaluating-defines.scm</code><br />
+<pre>1
+2
+"3.1415926535897932384626433"
+</pre>
+<p>Result: <span class="testpass">OK</span></p>
+<h3>Test 17</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator strings.scm</code><br />
+<pre>(string #\h #\e #\l #\l #\o)
+(string)
+(string-&gt;symbol (string #\h #\i))
+(string-length (string #\t #\h))
+(string-&gt;list "lift me up")
+(string-ref "hi" 1)
+(string-ref "hi" 0)
+(list-&gt;string (string-&gt;list "lift me up"))
+</pre>
+<p><b>Test 17</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>"hello"
+""
+hi
+2
+(#\l #\i #\f #\t #\space #\m #\e #\space #\u #\p)
+#\i
+#\h
+"lift me up"
+</pre><p>But got:</p>
+<pre>(string #\h #\e #\l #\l #\o)
+(string)
+(string-&gt;symbol (string #\h #\i))
+(string-length (string #\t #\h))
+(string-&gt;list "lift me up")
+(string-ref "hi" 1)
+(string-ref "hi" 0)
+(list-&gt;string (string-&gt;list "lift me up"))
+</pre>
+<h3>Test 18</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator true-that-is.scm</code><br />
+<pre>(if #f 2 1)
+(if #t 1 2)
+(if false 42 24)
+(if true true false)
+(if one 4 5)
+1
+</pre>
+<p><b>Test 18</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>1
+1
+24
+#f
+4
+1
+</pre><p>But got:</p>
+<pre>(if #f 2 1)
+(if #t 1 2)
+(if false 42 24)
+(if true true false)
+(if one 4 5)
+1
+</pre>
+<h3>Test 19</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator using-begin.scm</code><br />
+<pre>(begin (set! x y) x y)
+(begin z (set! z (quote pi)) z (begin (set! z (quote pi)) z (set! z 1) z))
+</pre>
+<p><b>Test 19</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>42
+1
+</pre><p>But got:</p>
+<pre>(begin (set! x y) x y)
+(begin z (set! z (quote pi)) z (begin (set! z (quote pi)) z (set! z 1) z))
+</pre>
+<h3>Test 20</h3>
+<code>java -cp scheme.jar org.instructures.interp.SchemeEvaluator y-combinator.scm</code><br />
+<pre>(fact 12)
+</pre>
+<p><b>Test 20</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>479001600
+</pre><p>But got:</p>
+<pre>(fact 12)
+</pre>
+<p>
+    Total FAILED: 11<br />
+
+    Total PASSED: 9<br />
+</p><p>
+
+(This submission scored 9 out of 20 points.)
+<br />
+</p></div>
+</body>
+</html>

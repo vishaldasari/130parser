@@ -1,0 +1,111 @@
+expressions.scm:05: NUMBER <486>
+expressions.scm:07: LPAREN
+expressions.scm:07: SYMBOL <+>
+expressions.scm:07: NUMBER <137>
+expressions.scm:07: NUMBER <349>
+expressions.scm:07: RPAREN
+expressions.scm:08: LPAREN
+expressions.scm:08: SYMBOL <->
+expressions.scm:08: NUMBER <1000>
+expressions.scm:08: NUMBER <334>
+expressions.scm:08: RPAREN
+expressions.scm:09: LPAREN
+expressions.scm:09: SYMBOL <*>
+expressions.scm:09: NUMBER <5>
+expressions.scm:09: NUMBER <99>
+expressions.scm:09: RPAREN
+expressions.scm:10: LPAREN
+expressions.scm:10: SYMBOL </>
+expressions.scm:10: NUMBER <10>
+expressions.scm:10: NUMBER <5>
+expressions.scm:10: RPAREN
+expressions.scm:11: LPAREN
+expressions.scm:11: SYMBOL <+>
+expressions.scm:11: NUMBER <27>
+expressions.scm:11: NUMBER <10>
+expressions.scm:11: RPAREN
+expressions.scm:13: LPAREN
+expressions.scm:13: SYMBOL <+>
+expressions.scm:13: NUMBER <21>
+expressions.scm:13: NUMBER <35>
+expressions.scm:13: NUMBER <12>
+expressions.scm:13: NUMBER <7>
+expressions.scm:13: RPAREN
+expressions.scm:14: LPAREN
+expressions.scm:14: SYMBOL <*>
+expressions.scm:14: NUMBER <25>
+expressions.scm:14: NUMBER <4>
+expressions.scm:14: NUMBER <12>
+expressions.scm:14: RPAREN
+expressions.scm:16: LPAREN
+expressions.scm:16: SYMBOL <+>
+expressions.scm:16: LPAREN
+expressions.scm:16: SYMBOL <*>
+expressions.scm:16: NUMBER <3>
+expressions.scm:16: NUMBER <5>
+expressions.scm:16: RPAREN
+expressions.scm:16: LPAREN
+expressions.scm:16: SYMBOL <->
+expressions.scm:16: NUMBER <10>
+expressions.scm:16: NUMBER <6>
+expressions.scm:16: RPAREN
+expressions.scm:16: RPAREN
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <+>
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <*>
+expressions.scm:18: NUMBER <3>
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <+>
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <*>
+expressions.scm:18: NUMBER <2>
+expressions.scm:18: NUMBER <4>
+expressions.scm:18: RPAREN
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <+>
+expressions.scm:18: NUMBER <3>
+expressions.scm:18: NUMBER <5>
+expressions.scm:18: RPAREN
+expressions.scm:18: RPAREN
+expressions.scm:18: RPAREN
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <+>
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL <->
+expressions.scm:18: NUMBER <10>
+expressions.scm:18: NUMBER <7>
+expressions.scm:18: RPAREN
+expressions.scm:18: NUMBER <6>
+expressions.scm:18: RPAREN
+expressions.scm:18: RPAREN
+expressions.scm:20: LPAREN
+expressions.scm:20: SYMBOL <+>
+expressions.scm:20: LPAREN
+expressions.scm:20: SYMBOL <*>
+expressions.scm:20: NUMBER <3>
+expressions.scm:21: LPAREN
+expressions.scm:21: SYMBOL <+>
+expressions.scm:21: LPAREN
+expressions.scm:21: SYMBOL <*>
+expressions.scm:21: NUMBER <2>
+expressions.scm:21: NUMBER <4>
+expressions.scm:21: RPAREN
+expressions.scm:22: LPAREN
+expressions.scm:22: SYMBOL <+>
+expressions.scm:22: NUMBER <3>
+expressions.scm:22: NUMBER <5>
+expressions.scm:22: RPAREN
+expressions.scm:22: RPAREN
+expressions.scm:22: RPAREN
+expressions.scm:23: LPAREN
+expressions.scm:23: SYMBOL <+>
+expressions.scm:23: LPAREN
+expressions.scm:23: SYMBOL <->
+expressions.scm:23: NUMBER <10>
+expressions.scm:23: NUMBER <7>
+expressions.scm:23: RPAREN
+expressions.scm:24: NUMBER <6>
+expressions.scm:24: RPAREN
+expressions.scm:24: RPAREN
+expressions.scm:25: EOF

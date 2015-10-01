@@ -1,0 +1,29 @@
+all-token-types.scm:02: SQUOTE
+all-token-types.scm:03: SYMBOL <quote>
+all-token-types.scm:04: LPAREN
+all-token-types.scm:06: SYMBOL <+>
+all-token-types.scm:07: SYMBOL <->
+all-token-types.scm:08: SYMBOL <identifier>
+all-token-types.scm:09: SYMBOL <a4>
+all-token-types.scm:10: SYMBOL <...>
+all-token-types.scm:11: BOOLEAN <#t>
+all-token-types.scm:12: BOOLEAN <#f>
+all-token-types.scm:13: CHARACTER <#\space>
+all-token-types.scm:14: STRING <"">
+all-token-types.scm:15: NUMBER <1>
+all-token-types.scm:16: NUMBER <-0>
+all-token-types.scm:19: STRING <"">
+all-token-types.scm:20: NUMBER <+0>
+all-token-types.scm:21: LBRACK
+all-token-types.scm:22: CHARACTER <#\newline>
+all-token-types.scm:23: CHARACTER <#\a>
+all-token-types.scm:24: RBRACK
+all-token-types.scm:25: NUMBER <10000000>
+all-token-types.scm:26: NUMBER <-10000000>
+all-token-types.scm:27: NUMBER <+99999999>
+all-token-types.scm:28: SYMBOL <!$%&*/:<=>?~_^a5.+-@_>
+all-token-types.scm:29: DOT
+all-token-types.scm:30: STRING <"it's a \"string\"...\\ if you will\n">
+all-token-types.scm:31: RPAREN
+all-token-types.scm:32: SYMBOL <->...>
+all-token-types.scm:34: EOF

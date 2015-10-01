@@ -1,0 +1,13 @@
+expression.scm:01: LPAREN
+expression.scm:01: SYMBOL <+>
+expression.scm:01: NUMBER <1>
+expression.scm:01: NUMBER <2>
+expression.scm:01: NUMBER <3>
+expression.scm:01: NUMBER <4>
+expression.scm:01: LPAREN
+expression.scm:01: SYMBOL <*>
+expression.scm:01: NUMBER <8>
+expression.scm:01: NUMBER <8>
+expression.scm:01: RPAREN
+expression.scm:01: RPAREN
+expression.scm:02: EOF

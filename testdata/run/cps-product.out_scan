@@ -1,0 +1,116 @@
+cps-product.scm:02: LPAREN
+cps-product.scm:02: SYMBOL <define>
+cps-product.scm:02: LPAREN
+cps-product.scm:02: SYMBOL <product>
+cps-product.scm:02: SYMBOL <ls>
+cps-product.scm:02: SYMBOL <k>
+cps-product.scm:02: RPAREN
+cps-product.scm:03: LPAREN
+cps-product.scm:03: SYMBOL <let>
+cps-product.scm:03: LPAREN
+cps-product.scm:03: LPAREN
+cps-product.scm:03: SYMBOL <break>
+cps-product.scm:03: SYMBOL <k>
+cps-product.scm:03: RPAREN
+cps-product.scm:03: RPAREN
+cps-product.scm:04: LPAREN
+cps-product.scm:04: SYMBOL <define>
+cps-product.scm:04: LPAREN
+cps-product.scm:04: SYMBOL <f>
+cps-product.scm:04: SYMBOL <ls>
+cps-product.scm:04: SYMBOL <k>
+cps-product.scm:04: RPAREN
+cps-product.scm:05: LPAREN
+cps-product.scm:05: SYMBOL <cond>
+cps-product.scm:06: LPAREN
+cps-product.scm:06: LPAREN
+cps-product.scm:06: SYMBOL <null?>
+cps-product.scm:06: SYMBOL <ls>
+cps-product.scm:06: RPAREN
+cps-product.scm:06: LPAREN
+cps-product.scm:06: SYMBOL <k>
+cps-product.scm:06: NUMBER <1>
+cps-product.scm:06: RPAREN
+cps-product.scm:06: RPAREN
+cps-product.scm:07: LPAREN
+cps-product.scm:07: LPAREN
+cps-product.scm:07: SYMBOL <=>
+cps-product.scm:07: LPAREN
+cps-product.scm:07: SYMBOL <car>
+cps-product.scm:07: SYMBOL <ls>
+cps-product.scm:07: RPAREN
+cps-product.scm:07: NUMBER <0>
+cps-product.scm:07: RPAREN
+cps-product.scm:07: LPAREN
+cps-product.scm:07: SYMBOL <break>
+cps-product.scm:07: NUMBER <0>
+cps-product.scm:07: RPAREN
+cps-product.scm:07: RPAREN
+cps-product.scm:08: LPAREN
+cps-product.scm:08: SYMBOL <else>
+cps-product.scm:08: LPAREN
+cps-product.scm:08: SYMBOL <f>
+cps-product.scm:08: LPAREN
+cps-product.scm:08: SYMBOL <cdr>
+cps-product.scm:08: SYMBOL <ls>
+cps-product.scm:08: RPAREN
+cps-product.scm:09: LPAREN
+cps-product.scm:09: SYMBOL <lambda>
+cps-product.scm:09: LPAREN
+cps-product.scm:09: SYMBOL <x>
+cps-product.scm:09: RPAREN
+cps-product.scm:10: LPAREN
+cps-product.scm:10: SYMBOL <k>
+cps-product.scm:10: LPAREN
+cps-product.scm:10: SYMBOL <*>
+cps-product.scm:10: LPAREN
+cps-product.scm:10: SYMBOL <car>
+cps-product.scm:10: SYMBOL <ls>
+cps-product.scm:10: RPAREN
+cps-product.scm:10: SYMBOL <x>
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:11: LPAREN
+cps-product.scm:11: SYMBOL <f>
+cps-product.scm:11: SYMBOL <ls>
+cps-product.scm:11: SYMBOL <k>
+cps-product.scm:11: RPAREN
+cps-product.scm:11: RPAREN
+cps-product.scm:11: RPAREN
+cps-product.scm:13: LPAREN
+cps-product.scm:13: SYMBOL <product>
+cps-product.scm:13: SQUOTE
+cps-product.scm:13: LPAREN
+cps-product.scm:13: NUMBER <1>
+cps-product.scm:13: NUMBER <2>
+cps-product.scm:13: NUMBER <3>
+cps-product.scm:13: NUMBER <4>
+cps-product.scm:13: NUMBER <5>
+cps-product.scm:13: RPAREN
+cps-product.scm:13: SYMBOL <display>
+cps-product.scm:13: RPAREN
+cps-product.scm:14: LPAREN
+cps-product.scm:14: SYMBOL <newline>
+cps-product.scm:14: RPAREN
+cps-product.scm:15: LPAREN
+cps-product.scm:15: SYMBOL <product>
+cps-product.scm:15: SQUOTE
+cps-product.scm:15: LPAREN
+cps-product.scm:15: NUMBER <7>
+cps-product.scm:15: NUMBER <3>
+cps-product.scm:15: NUMBER <8>
+cps-product.scm:15: NUMBER <0>
+cps-product.scm:15: NUMBER <19>
+cps-product.scm:15: NUMBER <5>
+cps-product.scm:15: RPAREN
+cps-product.scm:15: SYMBOL <display>
+cps-product.scm:15: RPAREN
+cps-product.scm:16: LPAREN
+cps-product.scm:16: SYMBOL <newline>
+cps-product.scm:16: RPAREN
+cps-product.scm:17: EOF

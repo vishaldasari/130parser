@@ -1,0 +1,121 @@
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL <define>
+church-numbers.scm:01: SYMBOL <zero>
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL <lambda>
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL <s>
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL <lambda>
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL <z>
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: SYMBOL <z>
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: RPAREN
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL <define>
+church-numbers.scm:02: SYMBOL <one>
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL <lambda>
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL <s>
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL <lambda>
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL <z>
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL <s>
+church-numbers.scm:02: SYMBOL <z>
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: RPAREN
+church-numbers.scm:03: LPAREN
+church-numbers.scm:03: SYMBOL <define>
+church-numbers.scm:03: SYMBOL <succ>
+church-numbers.scm:04: LPAREN
+church-numbers.scm:04: SYMBOL <lambda>
+church-numbers.scm:04: LPAREN
+church-numbers.scm:04: SYMBOL <n>
+church-numbers.scm:04: RPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL <lambda>
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL <s>
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL <lambda>
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL <z>
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL <s>
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL <n>
+church-numbers.scm:05: SYMBOL <s>
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: SYMBOL <z>
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:06: LPAREN
+church-numbers.scm:06: SYMBOL <define>
+church-numbers.scm:06: LPAREN
+church-numbers.scm:06: SYMBOL <church->scheme>
+church-numbers.scm:06: SYMBOL <n>
+church-numbers.scm:06: RPAREN
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL <n>
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL <lambda>
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL <x>
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL <+>
+church-numbers.scm:07: SYMBOL <x>
+church-numbers.scm:07: NUMBER <1>
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: NUMBER <0>
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: RPAREN
+church-numbers.scm:09: LPAREN
+church-numbers.scm:09: SYMBOL <church->scheme>
+church-numbers.scm:09: SYMBOL <zero>
+church-numbers.scm:09: RPAREN
+church-numbers.scm:10: LPAREN
+church-numbers.scm:10: SYMBOL <church->scheme>
+church-numbers.scm:10: SYMBOL <one>
+church-numbers.scm:10: RPAREN
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL <church->scheme>
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL <succ>
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL <succ>
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL <succ>
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL <succ>
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL <succ>
+church-numbers.scm:11: SYMBOL <one>
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:12: EOF

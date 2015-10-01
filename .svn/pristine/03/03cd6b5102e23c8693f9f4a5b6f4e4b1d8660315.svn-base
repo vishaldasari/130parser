@@ -1,0 +1,316 @@
+package org.instructures.interp;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import org.instructures.interp.Problem.EvaluationError;
+import org.instructures.interp.values.*;
+import org.instructures.interp.values.CompoundDatum.Pair;
+import org.instructures.interp.values.LexemeDatum.SymbolDatum;
+
+public class SchemeEvaluator {
+  private final Environment environment;
+
+  public SchemeEvaluator() {
+    this.environment = Primitives.newGlobalEnvironment();
+  }
+
+  /**
+   * Driver for testing the evaluator. All of the files input for evaluation are
+   * executed in the same environment, as if they were all concatenated together
+   * and evaluated as a single file.
+   */
+  public static void main(String[] args) {
+    SchemeEvaluator evaluator = new SchemeEvaluator();
+    for (String filename: args) {
+      try (BufferedReader in = new BufferedReader(new FileReader(filename))) {
+        DatumParser parser = new DatumParser(in);
+        for (;;) {
+          try {
+            Datum datum = parser.nextDatum();
+            if (datum == null) {
+              break;
+            }
+            Value value = evaluator.evaluate(datum);
+            if (value.isSpecified()) {
+              System.out.printf("%s%n", value.toSyntaxString());
+            }
+          } catch (EvaluationError e) {
+            System.err.printf("%s:%s%n", filename, e.getMessage());
+          }
+        }
+      } catch (Exception e) {
+        System.err.printf("%s:%s%n", filename, e.getMessage());
+      }
+    }
+  }
+
+  /**
+   * Evaluates the S-Expression specified by the given datum. If the expression
+   * does not have a defined value then {@code null} is returned. In the event
+   * of a syntax or type error, a Problem will be thrown.
+   */
+  public Value evaluate(Datum sExpr) throws Problem {
+    return evaluate(sExpr, environment);
+  }
+
+  private static Value evaluate(Datum sExpr, Environment environment) {
+	  
+    // YOUR CODE HERE //
+        // EXAMPLE FROM CLASS:
+	  
+	  
+        if (sExpr.isSymbol()) {
+          return environment.lookupVariable(sExpr.toString());
+        }
+        else if(sExpr.isBoolean() | sExpr.isCharacter() | sExpr.isNumber() | sExpr.isString()) {
+        	return sExpr;
+        }
+        else if( sExpr.getCar().toString().equals("quote")){
+        	return sExpr.getCdr().getCar();
+        }
+        else if (sExpr.isList()) {
+        	
+    		
+        	Value firstOP = sExpr.getCar();  // first operand
+        	
+        	// define cases: 
+        	if(firstOP.toString().equals("define")) {
+        		
+        	
+        		Value secondOP = sExpr.getCdr().getCar();
+        		Value thirdOP = sExpr.getCdr().getCdr().getCar();
+        		
+        		environment.defineVariable(secondOP.toString(), thirdOP);      		
+       		return RuntimeValue.newUnspecified();
+        	}
+        	
+        	// set! cases: 
+        	else if (firstOP.toString().equals("set!")){  
+
+        		Value secondOP = sExpr.getCdr().getCar();
+        		Value thirdOP = sExpr.getCdr().getCdr().getCar();
+        		
+        			environment.defineVariable(secondOP.toString(), evalExpr(thirdOP, environment));
+        		return RuntimeValue.newUnspecified();
+        	}
+        	
+        	// operator (comparison cases) :  <,<=,=,>,>=,
+        	
+        	else if (firstOP.toString().equals("<") | firstOP.toString().equals("=") | firstOP.toString().equals("<=") | firstOP.toString().equals(">") | firstOP.toString().equals(">=")  ){
+       
+        		int sizeOfList = listSize(sExpr);
+        		int i;
+        		Lexeme rtrue = new Lexeme (TokenType.BOOLEAN, "#t", 0);
+        		Lexeme rfalse = new Lexeme (TokenType.BOOLEAN, "#f", 0);
+        			   
+        		if (sizeOfList < 2 )
+        			 throw Problem.typeError("Too few arguments: %d (expected at least 2)", sizeOfList);
+        		else{
+        			
+        			Value secondOP = sExpr.getCdr();
+            		Value thirdOP = sExpr.getCdr().getCdr();
+            		String operator = firstOP.toString();
+            		
+        		for ( i=0; i<sizeOfList - 1; i++){
+        			if (!isGoodComparison (secondOP, thirdOP, operator))
+        			return rfalse.getValue();
+        		
+        			secondOP = nextCdr(secondOP);
+        			thirdOP = nextCdr(thirdOP);
+        		}
+        		return rtrue.getValue();
+        	}      	
+        }
+        	
+        	// min & max cases: 
+        	else if (firstOP.toSyntaxString().equals("min") |firstOP.toSyntaxString().equals("max")  ){
+        		
+        	return evalExpr(sExpr, environment);	
+        
+        	}
+        	
+        	// operators: +,-, /,* cases
+        	else if (firstOP.toString().equals("+") | firstOP.toString().equals("-") | firstOP.toString().equals("*")  | firstOP.toString().equals("/")   ){
+        		
+            	return evalExpr(sExpr, environment);	
+            
+            	}
+        	
+        }
+        	
+  else {
+          // then just assume it's self-evaluating
+          return sExpr;
+        }  
+	  
+        return sExpr;
+  }
+  
+  // function helper by wong
+
+  private static Value evalExpr (Value sExpr, Environment env){
+	  
+	  
+	
+	  // if it's a symbol, return it.
+      if (sExpr.isSymbol()) {
+        return env.lookupVariable(sExpr.toString());
+      }
+	  else if ( sExpr.isNumber()){
+		  return sExpr;
+	  }
+	  else if (sExpr.getCar().toString().equals("quote")){
+      	return sExpr.getCdr().getCar();
+	  }
+	  else if (sExpr.getCar().toString().equals("min") | sExpr.getCar().toString().equals("max") ){
+		  
+	 
+		    Value firstOP = sExpr.getCar();  // first operand
+			Value secondOP = sExpr.getCdr().getCar();
+    		Value thirdOP = sExpr.getCdr().getCdr().getCar();
+    		int fst;
+    		int snd; 
+   		
+    		 if ( sExpr.isList() && !secondOP.isNumber()) {
+    			sExpr = evalExpr(secondOP, env);
+    		  }
+    		
+    		else if ( sExpr.isList() && !thirdOP.isNumber()) {
+    			sExpr = evalExpr(thirdOP, env);
+    		  }	
+    		else if (secondOP.isNumber() && thirdOP.isNumber()){
+    			fst = Integer.parseInt(evalExpr(secondOP, env).toString());
+    			snd = Integer.parseInt(evalExpr(thirdOP, env).toString());
+    			if (firstOP.toString().equals("max"))
+    			return (fst>snd)?secondOP:thirdOP;
+    			if (firstOP.toString().equals("min"))
+        			return (fst<snd)?secondOP:thirdOP;
+    		}
+	  
+	  }
+      
+	 else if (sExpr.getCar().toString().toString().equals("+") | sExpr.getCar().toString().toString().equals("-") | sExpr.getCar().toString().toString().equals("*")  | sExpr.getCar().toString().toString().equals("/")   ){
+		 
+		 	Value firstOP = sExpr.getCar();
+			Value secondOP = sExpr.getCdr().getCar();
+			Value thirdOP = sExpr.getCdr().getCdr().getCar();
+			Lexeme lex;
+			int fst;
+			int snd;
+			int result;
+			
+			if (firstOP.isNumber())
+				return firstOP;
+			else if (!secondOP.isNumber())
+				sExpr = evalExpr(secondOP, env);
+				else if (!thirdOP.isNumber())
+					sExpr = evalExpr(thirdOP, env);
+				else if (secondOP.isNumber() && thirdOP.isNumber()){
+					fst = Integer.parseInt(evalExpr(secondOP, env).toString());
+	    			snd = Integer.parseInt(evalExpr(thirdOP, env).toString());
+	    			System.out.printf("wOKING ON this");
+					// starts the operators logic:
+				/*  if (firstOP.toString().equals("+")){
+					  result = fst + snd;
+					  lex = new Lexeme(TokenType.NUMBER, Integer.toString(result), 0 );
+					  secondOP = lex.getValue();
+					  thirdOP = thirdOP.getCdr();
+				  }*/
+						
+				  
+				}
+					
+		 
+		 return sExpr;	
+	 }
+	  else if (sExpr.getCar().isSymbol()){
+		  return env.lookupVariable(sExpr.toString());
+	  }
+	  
+	  return sExpr;
+  }
+  
+  
+   private static Value nextCdr (Value sExpr){
+	   return sExpr.getCdr();
+   }
+   
+   private static Integer listSize (Value sExpr){
+	   int size = 0;
+	   
+		      try (BufferedReader in = new BufferedReader(new StringReader(sExpr.toString()))) {
+		        TokenScanner scanner = new TokenScanner(in);
+		        Lexeme token;
+		        do {
+		          token = scanner.nextToken();
+		          if (token.matches(TokenType.NUMBER)){
+		        	  size++;
+		          }
+		        } while (token.isNoneOf(TokenType.EOF));
+		      } catch (Exception e) {
+		    	  System.out.printf("ERRPR FOUND");
+		        e.printStackTrace(System.err);
+		      }	   
+	   
+	   return size;
+   }
+  
+   private static boolean isGoodComparison (Value first, Value second, String op){
+	   
+	   int fOP = Integer.parseInt(first.getCar().toString());
+	   int sOP = Integer.parseInt(second.getCar().toString());
+	   
+	   switch (op) {
+	   case "<":
+	         return ( fOP < sOP) ?true :false;        
+	   case "<=": 
+		   return ( fOP <= sOP) ?true :false;   
+	   case ">":
+		   return ( fOP > sOP) ?true :false;   
+	   case ">=":        
+		   return ( fOP >= sOP) ?true :false;   
+	   case "=":
+		   return ( fOP == sOP) ?true :false;   
+	   default:
+	         System.out.printf("SOMETHING WENT WRONG... RETURNING FALSE");
+	         return false;
+	 }
+	   
+	   
+   }
+   
+   
+  //
+  
+  
+  // YOUR CODE HERE //
+  // EXAMPLE CODE:
+  //  private static class Lambda extends RuntimeValue.Procedure {
+  //    private List<String> formals;
+  //    private List<Datum> body;
+  //    private Environment scope;
+  //
+  //    public Lambda(List<String> formals, boolean isVarArg, List<Datum> body, Environment scope) {
+  //      super(formals.size() - (isVarArg ? 1 : 0), isVarArg);
+  //      this.formals = formals;
+  //      this.body = body;
+  //      this.scope = scope;
+  //    }
+  //
+  //    @Override
+  //    public Value checkedApply(LinkedList<Value> args) {
+  //      Environment extendedEnvironment = scope.extend(formals, args);
+  //      return evaluateSequence(body, extendedEnvironment);
+  //    }
+  //  }
+
+  private static void assertCondition(boolean condition, String fmt, Object... args) {
+    if (!condition) {
+      throw Problem.invalidExpression(fmt, args);
+    }
+  }
+}

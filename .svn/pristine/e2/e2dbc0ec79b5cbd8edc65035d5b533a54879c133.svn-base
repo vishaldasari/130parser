@@ -1,0 +1,214 @@
+lists.scm:01: LPAREN
+lists.scm:01: SYMBOL <define>
+lists.scm:01: LPAREN
+lists.scm:01: SYMBOL <fold-right>
+lists.scm:01: SYMBOL <op>
+lists.scm:01: SYMBOL <init>
+lists.scm:01: SYMBOL <lst>
+lists.scm:01: RPAREN
+lists.scm:02: LPAREN
+lists.scm:02: SYMBOL <if>
+lists.scm:02: LPAREN
+lists.scm:02: SYMBOL <null?>
+lists.scm:02: SYMBOL <lst>
+lists.scm:02: RPAREN
+lists.scm:03: SYMBOL <init>
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL <op>
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL <car>
+lists.scm:04: SYMBOL <lst>
+lists.scm:04: RPAREN
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL <fold-right>
+lists.scm:04: SYMBOL <op>
+lists.scm:04: SYMBOL <init>
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL <cdr>
+lists.scm:04: SYMBOL <lst>
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:06: LPAREN
+lists.scm:06: SYMBOL <define>
+lists.scm:06: LPAREN
+lists.scm:06: SYMBOL <fold-left>
+lists.scm:06: SYMBOL <op>
+lists.scm:06: SYMBOL <init>
+lists.scm:06: SYMBOL <lst>
+lists.scm:06: RPAREN
+lists.scm:07: LPAREN
+lists.scm:07: SYMBOL <if>
+lists.scm:07: LPAREN
+lists.scm:07: SYMBOL <null?>
+lists.scm:07: SYMBOL <lst>
+lists.scm:07: RPAREN
+lists.scm:08: SYMBOL <init>
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL <fold-left>
+lists.scm:09: SYMBOL <op>
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL <op>
+lists.scm:09: SYMBOL <init>
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL <car>
+lists.scm:09: SYMBOL <lst>
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL <cdr>
+lists.scm:09: SYMBOL <lst>
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:11: LPAREN
+lists.scm:11: SYMBOL <define>
+lists.scm:11: LPAREN
+lists.scm:11: SYMBOL <append>
+lists.scm:11: SYMBOL <list1>
+lists.scm:11: SYMBOL <list2>
+lists.scm:11: RPAREN
+lists.scm:12: LPAREN
+lists.scm:12: SYMBOL <if>
+lists.scm:12: LPAREN
+lists.scm:12: SYMBOL <null?>
+lists.scm:12: SYMBOL <list1>
+lists.scm:12: RPAREN
+lists.scm:13: SYMBOL <list2>
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL <cons>
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL <car>
+lists.scm:14: SYMBOL <list1>
+lists.scm:14: RPAREN
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL <append>
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL <cdr>
+lists.scm:14: SYMBOL <list1>
+lists.scm:14: RPAREN
+lists.scm:14: SYMBOL <list2>
+lists.scm:14: RPAREN
+lists.scm:14: RPAREN
+lists.scm:14: RPAREN
+lists.scm:14: RPAREN
+lists.scm:16: LPAREN
+lists.scm:16: SYMBOL <define>
+lists.scm:16: LPAREN
+lists.scm:16: SYMBOL <reverse1>
+lists.scm:16: SYMBOL <lst>
+lists.scm:16: RPAREN
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL <fold-right>
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL <lambda>
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL <x>
+lists.scm:17: SYMBOL <y>
+lists.scm:17: RPAREN
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL <append>
+lists.scm:17: SYMBOL <y>
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL <cons>
+lists.scm:17: SYMBOL <x>
+lists.scm:17: SQUOTE
+lists.scm:17: LPAREN
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:17: SQUOTE
+lists.scm:17: LPAREN
+lists.scm:17: RPAREN
+lists.scm:17: SYMBOL <lst>
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:19: LPAREN
+lists.scm:19: SYMBOL <define>
+lists.scm:19: LPAREN
+lists.scm:19: SYMBOL <reverse2>
+lists.scm:19: SYMBOL <lst>
+lists.scm:19: RPAREN
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL <fold-left>
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL <lambda>
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL <x>
+lists.scm:20: SYMBOL <y>
+lists.scm:20: RPAREN
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL <cons>
+lists.scm:20: SYMBOL <y>
+lists.scm:20: SYMBOL <x>
+lists.scm:20: RPAREN
+lists.scm:20: RPAREN
+lists.scm:20: SQUOTE
+lists.scm:20: LPAREN
+lists.scm:20: RPAREN
+lists.scm:20: SYMBOL <lst>
+lists.scm:20: RPAREN
+lists.scm:20: RPAREN
+lists.scm:22: LPAREN
+lists.scm:22: SYMBOL <reverse1>
+lists.scm:22: SQUOTE
+lists.scm:22: LPAREN
+lists.scm:22: RPAREN
+lists.scm:22: RPAREN
+lists.scm:23: LPAREN
+lists.scm:23: SYMBOL <reverse1>
+lists.scm:23: SQUOTE
+lists.scm:23: LPAREN
+lists.scm:23: STRING <"eddie">
+lists.scm:23: STRING <"moe">
+lists.scm:23: STRING <"jack">
+lists.scm:23: RPAREN
+lists.scm:23: RPAREN
+lists.scm:24: LPAREN
+lists.scm:24: SYMBOL <reverse2>
+lists.scm:24: SQUOTE
+lists.scm:24: LPAREN
+lists.scm:24: STRING <"l">
+lists.scm:24: STRING <"i">
+lists.scm:24: STRING <"s">
+lists.scm:24: STRING <"a">
+lists.scm:24: STRING <"b">
+lists.scm:24: STRING <"o">
+lists.scm:24: STRING <"n">
+lists.scm:24: STRING <"e">
+lists.scm:24: STRING <"t">
+lists.scm:24: STRING <"a">
+lists.scm:24: STRING <"t">
+lists.scm:24: STRING <"e">
+lists.scm:24: STRING <"n">
+lists.scm:24: STRING <"o">
+lists.scm:24: STRING <"b">
+lists.scm:24: STRING <"a">
+lists.scm:24: STRING <"s">
+lists.scm:24: STRING <"i">
+lists.scm:24: STRING <"l">
+lists.scm:24: RPAREN
+lists.scm:24: RPAREN
+lists.scm:25: LPAREN
+lists.scm:25: SYMBOL <reverse2>
+lists.scm:25: SQUOTE
+lists.scm:25: LPAREN
+lists.scm:25: NUMBER <1>
+lists.scm:25: NUMBER <2>
+lists.scm:25: LPAREN
+lists.scm:25: RPAREN
+lists.scm:25: LPAREN
+lists.scm:25: NUMBER <3>
+lists.scm:25: RPAREN
+lists.scm:25: LPAREN
+lists.scm:25: LPAREN
+lists.scm:25: NUMBER <4>
+lists.scm:25: RPAREN
+lists.scm:25: RPAREN
+lists.scm:25: RPAREN
+lists.scm:25: RPAREN
+lists.scm:26: EOF

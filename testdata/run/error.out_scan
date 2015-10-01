@@ -1,0 +1,6 @@
+error.scm:01: Error: Unexpected character: "{"
+error.scm:02: LPAREN
+error.scm:02: Error: Invalid string escape: "\:"
+error.scm:03: Error: Invalid character after "#": #m
+error.scm:04: BOOLEAN <#f>
+error.scm:06: EOF

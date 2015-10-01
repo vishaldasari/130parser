@@ -1,0 +1,966 @@
+<!doctype html>
+<html>
+<head>
+<title>Autograder Results</title>
+<link rel="stylesheet" href="https://s3.amazonaws.com/style.instructures.org/s.c                                                                     ss" type="text/css">
+<meta name="viewport" content="initial-scale=1">
+</head><body><div class="main-content"><h3>Setup</h3>
+<code>Initialized</code><br />
+CREATED <em>temporary-directory</em><br />
+EXTRACTING RESOURCES /testdata/run<br />
+COPIED <em>temporary-directory</em>\run\y-combinator.scm<br />
+COPIED <em>temporary-directory</em>\run\y-combinator.out_scan<br />
+COPIED <em>temporary-directory</em>\run\two-defines.scm<br />
+COPIED <em>temporary-directory</em>\run\two-defines.out_scan<br />
+COPIED <em>temporary-directory</em>\run\scheme.jar<br />
+COPIED <em>temporary-directory</em>\run\same-parity.scm<br />
+COPIED <em>temporary-directory</em>\run\print-all.scm<br />
+COPIED <em>temporary-directory</em>\run\Makefile<br />
+COPIED <em>temporary-directory</em>\run\lists.scm<br />
+COPIED <em>temporary-directory</em>\run\lists.out_scan<br />
+COPIED <em>temporary-directory</em>\run\foo.scm<br />
+COPIED <em>temporary-directory</em>\run\expressions.scm<br />
+COPIED <em>temporary-directory</em>\run\expressions.out_scan<br />
+COPIED <em>temporary-directory</em>\run\expression.scm<br />
+COPIED <em>temporary-directory</em>\run\expression.out_scan<br />
+COPIED <em>temporary-directory</em>\run\error.scm<br />
+COPIED <em>temporary-directory</em>\run\error.out_scan<br />
+COPIED <em>temporary-directory</em>\run\empty.scm<br />
+COPIED <em>temporary-directory</em>\run\empty.out_scan<br />
+COPIED <em>temporary-directory</em>\run\cps-product.scm<br />
+COPIED <em>temporary-directory</em>\run\cps-product.out_scan<br />
+COPIED <em>temporary-directory</em>\run\church-numbers.scm<br />
+COPIED <em>temporary-directory</em>\run\church-numbers.out_scan<br />
+COPIED <em>temporary-directory</em>\run\all-token-types.scm<br />
+COPIED <em>temporary-directory</em>\run\all-token-types.out_scan<br />
+RECEIVED scheme.jar (70905 bytes)<br />
+<h3>Found</h3>
+<code>10 tests</code><br />
+<h3>Test 01</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner empty.scm</code><                                                                     br />
+<pre>empty.scm:01: EOF
+</pre>
+<p><b>Test 01</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>empty.scm:01: EOF
+</pre><p>But got:</p>
+<pre>empty.scm:01: EOF
+</pre>
+<h3>Test 02</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner expression.scm</c                                                                     ode><br />
+<pre>expression.scm:01: EOF
+</pre>
+<p><b>Test 02</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>expression.scm:01: LPAREN
+expression.scm:01: SYMBOL &lt;+&gt;
+expression.scm:01: NUMBER &lt;1&gt;
+expression.scm:01: NUMBER &lt;2&gt;
+expression.scm:01: NUMBER &lt;3&gt;
+expression.scm:01: NUMBER &lt;4&gt;
+expression.scm:01: LPAREN
+expression.scm:01: SYMBOL &lt;*&gt;
+expression.scm:01: NUMBER &lt;8&gt;
+expression.scm:01: NUMBER &lt;8&gt;
+expression.scm:01: RPAREN
+expression.scm:01: RPAREN
+expression.scm:02: EOF
+</pre><p>But got:</p>
+<pre>expression.scm:01: EOF
+</pre>
+<h3>Test 03</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner expressions.scm</                                                                     code><br />
+<pre>expressions.scm:01: EOF
+</pre>
+<p><b>Test 03</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>expressions.scm:05: NUMBER &lt;486&gt;
+expressions.scm:07: LPAREN
+expressions.scm:07: SYMBOL &lt;+&gt;
+expressions.scm:07: NUMBER &lt;137&gt;
+expressions.scm:07: NUMBER &lt;349&gt;
+expressions.scm:07: RPAREN
+expressions.scm:08: LPAREN
+expressions.scm:08: SYMBOL &lt;-&gt;
+expressions.scm:08: NUMBER &lt;1000&gt;
+expressions.scm:08: NUMBER &lt;334&gt;
+expressions.scm:08: RPAREN
+expressions.scm:09: LPAREN
+expressions.scm:09: SYMBOL &lt;*&gt;
+expressions.scm:09: NUMBER &lt;5&gt;
+expressions.scm:09: NUMBER &lt;99&gt;
+expressions.scm:09: RPAREN
+expressions.scm:10: LPAREN
+expressions.scm:10: SYMBOL &lt;/&gt;
+expressions.scm:10: NUMBER &lt;10&gt;
+expressions.scm:10: NUMBER &lt;5&gt;
+expressions.scm:10: RPAREN
+expressions.scm:11: LPAREN
+expressions.scm:11: SYMBOL &lt;+&gt;
+expressions.scm:11: NUMBER &lt;27&gt;
+expressions.scm:11: NUMBER &lt;10&gt;
+expressions.scm:11: RPAREN
+expressions.scm:13: LPAREN
+expressions.scm:13: SYMBOL &lt;+&gt;
+expressions.scm:13: NUMBER &lt;21&gt;
+expressions.scm:13: NUMBER &lt;35&gt;
+expressions.scm:13: NUMBER &lt;12&gt;
+expressions.scm:13: NUMBER &lt;7&gt;
+expressions.scm:13: RPAREN
+expressions.scm:14: LPAREN
+expressions.scm:14: SYMBOL &lt;*&gt;
+expressions.scm:14: NUMBER &lt;25&gt;
+expressions.scm:14: NUMBER &lt;4&gt;
+expressions.scm:14: NUMBER &lt;12&gt;
+expressions.scm:14: RPAREN
+expressions.scm:16: LPAREN
+expressions.scm:16: SYMBOL &lt;+&gt;
+expressions.scm:16: LPAREN
+expressions.scm:16: SYMBOL &lt;*&gt;
+expressions.scm:16: NUMBER &lt;3&gt;
+expressions.scm:16: NUMBER &lt;5&gt;
+expressions.scm:16: RPAREN
+expressions.scm:16: LPAREN
+expressions.scm:16: SYMBOL &lt;-&gt;
+expressions.scm:16: NUMBER &lt;10&gt;
+expressions.scm:16: NUMBER &lt;6&gt;
+expressions.scm:16: RPAREN
+expressions.scm:16: RPAREN
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;+&gt;
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;*&gt;
+expressions.scm:18: NUMBER &lt;3&gt;
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;+&gt;
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;*&gt;
+expressions.scm:18: NUMBER &lt;2&gt;
+expressions.scm:18: NUMBER &lt;4&gt;
+expressions.scm:18: RPAREN
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;+&gt;
+expressions.scm:18: NUMBER &lt;3&gt;
+expressions.scm:18: NUMBER &lt;5&gt;
+expressions.scm:18: RPAREN
+expressions.scm:18: RPAREN
+expressions.scm:18: RPAREN
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;+&gt;
+expressions.scm:18: LPAREN
+expressions.scm:18: SYMBOL &lt;-&gt;
+expressions.scm:18: NUMBER &lt;10&gt;
+expressions.scm:18: NUMBER &lt;7&gt;
+expressions.scm:18: RPAREN
+expressions.scm:18: NUMBER &lt;6&gt;
+expressions.scm:18: RPAREN
+expressions.scm:18: RPAREN
+expressions.scm:20: LPAREN
+expressions.scm:20: SYMBOL &lt;+&gt;
+expressions.scm:20: LPAREN
+expressions.scm:20: SYMBOL &lt;*&gt;
+expressions.scm:20: NUMBER &lt;3&gt;
+expressions.scm:21: LPAREN
+expressions.scm:21: SYMBOL &lt;+&gt;
+expressions.scm:21: LPAREN
+expressions.scm:21: SYMBOL &lt;*&gt;
+expressions.scm:21: NUMBER &lt;2&gt;
+expressions.scm:21: NUMBER &lt;4&gt;
+expressions.scm:21: RPAREN
+expressions.scm:22: LPAREN
+expressions.scm:22: SYMBOL &lt;+&gt;
+expressions.scm:22: NUMBER &lt;3&gt;
+expressions.scm:22: NUMBER &lt;5&gt;
+expressions.scm:22: RPAREN
+expressions.scm:22: RPAREN
+expressions.scm:22: RPAREN
+expressions.scm:23: LPAREN
+expressions.scm:23: SYMBOL &lt;+&gt;
+expressions.scm:23: LPAREN
+expressions.scm:23: SYMBOL &lt;-&gt;
+expressions.scm:23: NUMBER &lt;10&gt;
+expressions.scm:23: NUMBER &lt;7&gt;
+expressions.scm:23: RPAREN
+expressions.scm:24: NUMBER &lt;6&gt;
+expressions.scm:24: RPAREN
+expressions.scm:24: RPAREN
+expressions.scm:25: EOF
+</pre><p>But got:</p>
+<pre>expressions.scm:01: EOF
+</pre>
+<h3>Test 04</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner all-token-types.s                                                                     cm</code><br />
+<pre>all-token-types.scm:01: EOF
+</pre>
+<p><b>Test 04</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>all-token-types.scm:02: SQUOTE
+all-token-types.scm:03: SYMBOL &lt;quote&gt;
+all-token-types.scm:04: LPAREN
+all-token-types.scm:06: SYMBOL &lt;+&gt;
+all-token-types.scm:07: SYMBOL &lt;-&gt;
+all-token-types.scm:08: SYMBOL &lt;identifier&gt;
+all-token-types.scm:09: SYMBOL &lt;a4&gt;
+all-token-types.scm:10: SYMBOL &lt;...&gt;
+all-token-types.scm:11: BOOLEAN &lt;#t&gt;
+all-token-types.scm:12: BOOLEAN &lt;#f&gt;
+all-token-types.scm:13: CHARACTER &lt;#\space&gt;
+all-token-types.scm:14: STRING &lt;""&gt;
+all-token-types.scm:15: NUMBER &lt;1&gt;
+all-token-types.scm:16: NUMBER &lt;-0&gt;
+all-token-types.scm:19: STRING &lt;""&gt;
+all-token-types.scm:20: NUMBER &lt;+0&gt;
+all-token-types.scm:21: LBRACK
+all-token-types.scm:22: CHARACTER &lt;#\newline&gt;
+all-token-types.scm:23: CHARACTER &lt;#\a&gt;
+all-token-types.scm:24: RBRACK
+all-token-types.scm:25: NUMBER &lt;10000000&gt;
+all-token-types.scm:26: NUMBER &lt;-10000000&gt;
+all-token-types.scm:27: NUMBER &lt;+99999999&gt;
+all-token-types.scm:28: SYMBOL &lt;!$%&*/:&lt;=&gt;?~_^a5.+-@_&gt;
+all-token-types.scm:29: DOT
+all-token-types.scm:30: STRING &lt;"it's a \"string\"...\\ if you will\n"&gt;
+all-token-types.scm:31: RPAREN
+all-token-types.scm:32: SYMBOL &lt;-&gt;...&gt;
+all-token-types.scm:34: EOF
+</pre><p>But got:</p>
+<pre>all-token-types.scm:01: EOF
+</pre>
+<h3>Test 05</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner church-numbers.sc                                                                     m</code><br />
+<pre>church-numbers.scm:01: EOF
+</pre>
+<p><b>Test 05</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL &lt;define&gt;
+church-numbers.scm:01: SYMBOL &lt;zero&gt;
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL &lt;lambda&gt;
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL &lt;s&gt;
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL &lt;lambda&gt;
+church-numbers.scm:01: LPAREN
+church-numbers.scm:01: SYMBOL &lt;z&gt;
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: SYMBOL &lt;z&gt;
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: RPAREN
+church-numbers.scm:01: RPAREN
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL &lt;define&gt;
+church-numbers.scm:02: SYMBOL &lt;one&gt;
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL &lt;lambda&gt;
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL &lt;s&gt;
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL &lt;lambda&gt;
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL &lt;z&gt;
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: LPAREN
+church-numbers.scm:02: SYMBOL &lt;s&gt;
+church-numbers.scm:02: SYMBOL &lt;z&gt;
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: RPAREN
+church-numbers.scm:02: RPAREN
+church-numbers.scm:03: LPAREN
+church-numbers.scm:03: SYMBOL &lt;define&gt;
+church-numbers.scm:03: SYMBOL &lt;succ&gt;
+church-numbers.scm:04: LPAREN
+church-numbers.scm:04: SYMBOL &lt;lambda&gt;
+church-numbers.scm:04: LPAREN
+church-numbers.scm:04: SYMBOL &lt;n&gt;
+church-numbers.scm:04: RPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL &lt;lambda&gt;
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL &lt;s&gt;
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL &lt;lambda&gt;
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL &lt;z&gt;
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL &lt;s&gt;
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: LPAREN
+church-numbers.scm:05: SYMBOL &lt;n&gt;
+church-numbers.scm:05: SYMBOL &lt;s&gt;
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: SYMBOL &lt;z&gt;
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:05: RPAREN
+church-numbers.scm:06: LPAREN
+church-numbers.scm:06: SYMBOL &lt;define&gt;
+church-numbers.scm:06: LPAREN
+church-numbers.scm:06: SYMBOL &lt;church-&gt;scheme&gt;
+church-numbers.scm:06: SYMBOL &lt;n&gt;
+church-numbers.scm:06: RPAREN
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL &lt;n&gt;
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL &lt;lambda&gt;
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL &lt;x&gt;
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: LPAREN
+church-numbers.scm:07: SYMBOL &lt;+&gt;
+church-numbers.scm:07: SYMBOL &lt;x&gt;
+church-numbers.scm:07: NUMBER &lt;1&gt;
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: NUMBER &lt;0&gt;
+church-numbers.scm:07: RPAREN
+church-numbers.scm:07: RPAREN
+church-numbers.scm:09: LPAREN
+church-numbers.scm:09: SYMBOL &lt;church-&gt;scheme&gt;
+church-numbers.scm:09: SYMBOL &lt;zero&gt;
+church-numbers.scm:09: RPAREN
+church-numbers.scm:10: LPAREN
+church-numbers.scm:10: SYMBOL &lt;church-&gt;scheme&gt;
+church-numbers.scm:10: SYMBOL &lt;one&gt;
+church-numbers.scm:10: RPAREN
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL &lt;church-&gt;scheme&gt;
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL &lt;succ&gt;
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL &lt;succ&gt;
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL &lt;succ&gt;
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL &lt;succ&gt;
+church-numbers.scm:11: LPAREN
+church-numbers.scm:11: SYMBOL &lt;succ&gt;
+church-numbers.scm:11: SYMBOL &lt;one&gt;
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:11: RPAREN
+church-numbers.scm:12: EOF
+</pre><p>But got:</p>
+<pre>church-numbers.scm:01: EOF
+</pre>
+<h3>Test 06</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner cps-product.scm</                                                                     code><br />
+<pre>cps-product.scm:01: EOF
+</pre>
+<p><b>Test 06</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>cps-product.scm:02: LPAREN
+cps-product.scm:02: SYMBOL &lt;define&gt;
+cps-product.scm:02: LPAREN
+cps-product.scm:02: SYMBOL &lt;product&gt;
+cps-product.scm:02: SYMBOL &lt;ls&gt;
+cps-product.scm:02: SYMBOL &lt;k&gt;
+cps-product.scm:02: RPAREN
+cps-product.scm:03: LPAREN
+cps-product.scm:03: SYMBOL &lt;let&gt;
+cps-product.scm:03: LPAREN
+cps-product.scm:03: LPAREN
+cps-product.scm:03: SYMBOL &lt;break&gt;
+cps-product.scm:03: SYMBOL &lt;k&gt;
+cps-product.scm:03: RPAREN
+cps-product.scm:03: RPAREN
+cps-product.scm:04: LPAREN
+cps-product.scm:04: SYMBOL &lt;define&gt;
+cps-product.scm:04: LPAREN
+cps-product.scm:04: SYMBOL &lt;f&gt;
+cps-product.scm:04: SYMBOL &lt;ls&gt;
+cps-product.scm:04: SYMBOL &lt;k&gt;
+cps-product.scm:04: RPAREN
+cps-product.scm:05: LPAREN
+cps-product.scm:05: SYMBOL &lt;cond&gt;
+cps-product.scm:06: LPAREN
+cps-product.scm:06: LPAREN
+cps-product.scm:06: SYMBOL &lt;null?&gt;
+cps-product.scm:06: SYMBOL &lt;ls&gt;
+cps-product.scm:06: RPAREN
+cps-product.scm:06: LPAREN
+cps-product.scm:06: SYMBOL &lt;k&gt;
+cps-product.scm:06: NUMBER &lt;1&gt;
+cps-product.scm:06: RPAREN
+cps-product.scm:06: RPAREN
+cps-product.scm:07: LPAREN
+cps-product.scm:07: LPAREN
+cps-product.scm:07: SYMBOL &lt;=&gt;
+cps-product.scm:07: LPAREN
+cps-product.scm:07: SYMBOL &lt;car&gt;
+cps-product.scm:07: SYMBOL &lt;ls&gt;
+cps-product.scm:07: RPAREN
+cps-product.scm:07: NUMBER &lt;0&gt;
+cps-product.scm:07: RPAREN
+cps-product.scm:07: LPAREN
+cps-product.scm:07: SYMBOL &lt;break&gt;
+cps-product.scm:07: NUMBER &lt;0&gt;
+cps-product.scm:07: RPAREN
+cps-product.scm:07: RPAREN
+cps-product.scm:08: LPAREN
+cps-product.scm:08: SYMBOL &lt;else&gt;
+cps-product.scm:08: LPAREN
+cps-product.scm:08: SYMBOL &lt;f&gt;
+cps-product.scm:08: LPAREN
+cps-product.scm:08: SYMBOL &lt;cdr&gt;
+cps-product.scm:08: SYMBOL &lt;ls&gt;
+cps-product.scm:08: RPAREN
+cps-product.scm:09: LPAREN
+cps-product.scm:09: SYMBOL &lt;lambda&gt;
+cps-product.scm:09: LPAREN
+cps-product.scm:09: SYMBOL &lt;x&gt;
+cps-product.scm:09: RPAREN
+cps-product.scm:10: LPAREN
+cps-product.scm:10: SYMBOL &lt;k&gt;
+cps-product.scm:10: LPAREN
+cps-product.scm:10: SYMBOL &lt;*&gt;
+cps-product.scm:10: LPAREN
+cps-product.scm:10: SYMBOL &lt;car&gt;
+cps-product.scm:10: SYMBOL &lt;ls&gt;
+cps-product.scm:10: RPAREN
+cps-product.scm:10: SYMBOL &lt;x&gt;
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:10: RPAREN
+cps-product.scm:11: LPAREN
+cps-product.scm:11: SYMBOL &lt;f&gt;
+cps-product.scm:11: SYMBOL &lt;ls&gt;
+cps-product.scm:11: SYMBOL &lt;k&gt;
+cps-product.scm:11: RPAREN
+cps-product.scm:11: RPAREN
+cps-product.scm:11: RPAREN
+cps-product.scm:13: LPAREN
+cps-product.scm:13: SYMBOL &lt;product&gt;
+cps-product.scm:13: SQUOTE
+cps-product.scm:13: LPAREN
+cps-product.scm:13: NUMBER &lt;1&gt;
+cps-product.scm:13: NUMBER &lt;2&gt;
+cps-product.scm:13: NUMBER &lt;3&gt;
+cps-product.scm:13: NUMBER &lt;4&gt;
+cps-product.scm:13: NUMBER &lt;5&gt;
+cps-product.scm:13: RPAREN
+cps-product.scm:13: SYMBOL &lt;display&gt;
+cps-product.scm:13: RPAREN
+cps-product.scm:14: LPAREN
+cps-product.scm:14: SYMBOL &lt;newline&gt;
+cps-product.scm:14: RPAREN
+cps-product.scm:15: LPAREN
+cps-product.scm:15: SYMBOL &lt;product&gt;
+cps-product.scm:15: SQUOTE
+cps-product.scm:15: LPAREN
+cps-product.scm:15: NUMBER &lt;7&gt;
+cps-product.scm:15: NUMBER &lt;3&gt;
+cps-product.scm:15: NUMBER &lt;8&gt;
+cps-product.scm:15: NUMBER &lt;0&gt;
+cps-product.scm:15: NUMBER &lt;19&gt;
+cps-product.scm:15: NUMBER &lt;5&gt;
+cps-product.scm:15: RPAREN
+cps-product.scm:15: SYMBOL &lt;display&gt;
+cps-product.scm:15: RPAREN
+cps-product.scm:16: LPAREN
+cps-product.scm:16: SYMBOL &lt;newline&gt;
+cps-product.scm:16: RPAREN
+cps-product.scm:17: EOF
+</pre><p>But got:</p>
+<pre>cps-product.scm:01: EOF
+</pre>
+<h3>Test 07</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner lists.scm</code><                                                                     br />
+<pre>lists.scm:01: EOF
+</pre>
+<p><b>Test 07</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>lists.scm:01: LPAREN
+lists.scm:01: SYMBOL &lt;define&gt;
+lists.scm:01: LPAREN
+lists.scm:01: SYMBOL &lt;fold-right&gt;
+lists.scm:01: SYMBOL &lt;op&gt;
+lists.scm:01: SYMBOL &lt;init&gt;
+lists.scm:01: SYMBOL &lt;lst&gt;
+lists.scm:01: RPAREN
+lists.scm:02: LPAREN
+lists.scm:02: SYMBOL &lt;if&gt;
+lists.scm:02: LPAREN
+lists.scm:02: SYMBOL &lt;null?&gt;
+lists.scm:02: SYMBOL &lt;lst&gt;
+lists.scm:02: RPAREN
+lists.scm:03: SYMBOL &lt;init&gt;
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL &lt;op&gt;
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL &lt;car&gt;
+lists.scm:04: SYMBOL &lt;lst&gt;
+lists.scm:04: RPAREN
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL &lt;fold-right&gt;
+lists.scm:04: SYMBOL &lt;op&gt;
+lists.scm:04: SYMBOL &lt;init&gt;
+lists.scm:04: LPAREN
+lists.scm:04: SYMBOL &lt;cdr&gt;
+lists.scm:04: SYMBOL &lt;lst&gt;
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:04: RPAREN
+lists.scm:06: LPAREN
+lists.scm:06: SYMBOL &lt;define&gt;
+lists.scm:06: LPAREN
+lists.scm:06: SYMBOL &lt;fold-left&gt;
+lists.scm:06: SYMBOL &lt;op&gt;
+lists.scm:06: SYMBOL &lt;init&gt;
+lists.scm:06: SYMBOL &lt;lst&gt;
+lists.scm:06: RPAREN
+lists.scm:07: LPAREN
+lists.scm:07: SYMBOL &lt;if&gt;
+lists.scm:07: LPAREN
+lists.scm:07: SYMBOL &lt;null?&gt;
+lists.scm:07: SYMBOL &lt;lst&gt;
+lists.scm:07: RPAREN
+lists.scm:08: SYMBOL &lt;init&gt;
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL &lt;fold-left&gt;
+lists.scm:09: SYMBOL &lt;op&gt;
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL &lt;op&gt;
+lists.scm:09: SYMBOL &lt;init&gt;
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL &lt;car&gt;
+lists.scm:09: SYMBOL &lt;lst&gt;
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:09: LPAREN
+lists.scm:09: SYMBOL &lt;cdr&gt;
+lists.scm:09: SYMBOL &lt;lst&gt;
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:09: RPAREN
+lists.scm:11: LPAREN
+lists.scm:11: SYMBOL &lt;define&gt;
+lists.scm:11: LPAREN
+lists.scm:11: SYMBOL &lt;append&gt;
+lists.scm:11: SYMBOL &lt;list1&gt;
+lists.scm:11: SYMBOL &lt;list2&gt;
+lists.scm:11: RPAREN
+lists.scm:12: LPAREN
+lists.scm:12: SYMBOL &lt;if&gt;
+lists.scm:12: LPAREN
+lists.scm:12: SYMBOL &lt;null?&gt;
+lists.scm:12: SYMBOL &lt;list1&gt;
+lists.scm:12: RPAREN
+lists.scm:13: SYMBOL &lt;list2&gt;
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL &lt;cons&gt;
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL &lt;car&gt;
+lists.scm:14: SYMBOL &lt;list1&gt;
+lists.scm:14: RPAREN
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL &lt;append&gt;
+lists.scm:14: LPAREN
+lists.scm:14: SYMBOL &lt;cdr&gt;
+lists.scm:14: SYMBOL &lt;list1&gt;
+lists.scm:14: RPAREN
+lists.scm:14: SYMBOL &lt;list2&gt;
+lists.scm:14: RPAREN
+lists.scm:14: RPAREN
+lists.scm:14: RPAREN
+lists.scm:14: RPAREN
+lists.scm:16: LPAREN
+lists.scm:16: SYMBOL &lt;define&gt;
+lists.scm:16: LPAREN
+lists.scm:16: SYMBOL &lt;reverse1&gt;
+lists.scm:16: SYMBOL &lt;lst&gt;
+lists.scm:16: RPAREN
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL &lt;fold-right&gt;
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL &lt;lambda&gt;
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL &lt;x&gt;
+lists.scm:17: SYMBOL &lt;y&gt;
+lists.scm:17: RPAREN
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL &lt;append&gt;
+lists.scm:17: SYMBOL &lt;y&gt;
+lists.scm:17: LPAREN
+lists.scm:17: SYMBOL &lt;cons&gt;
+lists.scm:17: SYMBOL &lt;x&gt;
+lists.scm:17: SQUOTE
+lists.scm:17: LPAREN
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:17: SQUOTE
+lists.scm:17: LPAREN
+lists.scm:17: RPAREN
+lists.scm:17: SYMBOL &lt;lst&gt;
+lists.scm:17: RPAREN
+lists.scm:17: RPAREN
+lists.scm:19: LPAREN
+lists.scm:19: SYMBOL &lt;define&gt;
+lists.scm:19: LPAREN
+lists.scm:19: SYMBOL &lt;reverse2&gt;
+lists.scm:19: SYMBOL &lt;lst&gt;
+lists.scm:19: RPAREN
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL &lt;fold-left&gt;
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL &lt;lambda&gt;
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL &lt;x&gt;
+lists.scm:20: SYMBOL &lt;y&gt;
+lists.scm:20: RPAREN
+lists.scm:20: LPAREN
+lists.scm:20: SYMBOL &lt;cons&gt;
+lists.scm:20: SYMBOL &lt;y&gt;
+lists.scm:20: SYMBOL &lt;x&gt;
+lists.scm:20: RPAREN
+lists.scm:20: RPAREN
+lists.scm:20: SQUOTE
+lists.scm:20: LPAREN
+lists.scm:20: RPAREN
+lists.scm:20: SYMBOL &lt;lst&gt;
+lists.scm:20: RPAREN
+lists.scm:20: RPAREN
+lists.scm:22: LPAREN
+lists.scm:22: SYMBOL &lt;reverse1&gt;
+lists.scm:22: SQUOTE
+lists.scm:22: LPAREN
+lists.scm:22: RPAREN
+lists.scm:22: RPAREN
+lists.scm:23: LPAREN
+lists.scm:23: SYMBOL &lt;reverse1&gt;
+lists.scm:23: SQUOTE
+lists.scm:23: LPAREN
+lists.scm:23: STRING &lt;"eddie"&gt;
+lists.scm:23: STRING &lt;"moe"&gt;
+lists.scm:23: STRING &lt;"jack"&gt;
+lists.scm:23: RPAREN
+lists.scm:23: RPAREN
+lists.scm:24: LPAREN
+lists.scm:24: SYMBOL &lt;reverse2&gt;
+lists.scm:24: SQUOTE
+lists.scm:24: LPAREN
+lists.scm:24: STRING &lt;"l"&gt;
+lists.scm:24: STRING &lt;"i"&gt;
+lists.scm:24: STRING &lt;"s"&gt;
+lists.scm:24: STRING &lt;"a"&gt;
+lists.scm:24: STRING &lt;"b"&gt;
+lists.scm:24: STRING &lt;"o"&gt;
+lists.scm:24: STRING &lt;"n"&gt;
+lists.scm:24: STRING &lt;"e"&gt;
+lists.scm:24: STRING &lt;"t"&gt;
+lists.scm:24: STRING &lt;"a"&gt;
+lists.scm:24: STRING &lt;"t"&gt;
+lists.scm:24: STRING &lt;"e"&gt;
+lists.scm:24: STRING &lt;"n"&gt;
+lists.scm:24: STRING &lt;"o"&gt;
+lists.scm:24: STRING &lt;"b"&gt;
+lists.scm:24: STRING &lt;"a"&gt;
+lists.scm:24: STRING &lt;"s"&gt;
+lists.scm:24: STRING &lt;"i"&gt;
+lists.scm:24: STRING &lt;"l"&gt;
+lists.scm:24: RPAREN
+lists.scm:24: RPAREN
+lists.scm:25: LPAREN
+lists.scm:25: SYMBOL &lt;reverse2&gt;
+lists.scm:25: SQUOTE
+lists.scm:25: LPAREN
+lists.scm:25: NUMBER &lt;1&gt;
+lists.scm:25: NUMBER &lt;2&gt;
+lists.scm:25: LPAREN
+lists.scm:25: RPAREN
+lists.scm:25: LPAREN
+lists.scm:25: NUMBER &lt;3&gt;
+lists.scm:25: RPAREN
+lists.scm:25: LPAREN
+lists.scm:25: LPAREN
+lists.scm:25: NUMBER &lt;4&gt;
+lists.scm:25: RPAREN
+lists.scm:25: RPAREN
+lists.scm:25: RPAREN
+lists.scm:25: RPAREN
+lists.scm:26: EOF
+</pre><p>But got:</p>
+<pre>lists.scm:01: EOF
+</pre>
+<h3>Test 08</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner two-defines.scm</                                                                     code><br />
+<pre>two-defines.scm:01: EOF
+</pre>
+<p><b>Test 08</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>two-defines.scm:01: LPAREN
+two-defines.scm:01: SYMBOL &lt;define&gt;
+two-defines.scm:01: LPAREN
+two-defines.scm:01: SYMBOL &lt;reverse&gt;
+two-defines.scm:01: SYMBOL &lt;lst&gt;
+two-defines.scm:01: RPAREN
+two-defines.scm:02: LPAREN
+two-defines.scm:02: SYMBOL &lt;let&gt;
+two-defines.scm:02: SYMBOL &lt;loop&gt;
+two-defines.scm:02: LPAREN
+two-defines.scm:02: LPAREN
+two-defines.scm:02: SYMBOL &lt;result&gt;
+two-defines.scm:02: SQUOTE
+two-defines.scm:02: LPAREN
+two-defines.scm:02: RPAREN
+two-defines.scm:02: RPAREN
+two-defines.scm:02: LPAREN
+two-defines.scm:02: SYMBOL &lt;lst&gt;
+two-defines.scm:02: SYMBOL &lt;lst&gt;
+two-defines.scm:02: RPAREN
+two-defines.scm:02: RPAREN
+two-defines.scm:03: LPAREN
+two-defines.scm:03: SYMBOL &lt;if&gt;
+two-defines.scm:03: LPAREN
+two-defines.scm:03: SYMBOL &lt;null?&gt;
+two-defines.scm:03: SYMBOL &lt;lst&gt;
+two-defines.scm:03: RPAREN
+two-defines.scm:04: SYMBOL &lt;result&gt;
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL &lt;loop&gt;
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL &lt;cons&gt;
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL &lt;car&gt;
+two-defines.scm:05: SYMBOL &lt;lst&gt;
+two-defines.scm:05: RPAREN
+two-defines.scm:05: SYMBOL &lt;result&gt;
+two-defines.scm:05: RPAREN
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL &lt;cdr&gt;
+two-defines.scm:05: SYMBOL &lt;lst&gt;
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:07: LPAREN
+two-defines.scm:07: SYMBOL &lt;define&gt;
+two-defines.scm:07: LPAREN
+two-defines.scm:07: SYMBOL &lt;deep-reverse&gt;
+two-defines.scm:07: SYMBOL &lt;lst&gt;
+two-defines.scm:07: RPAREN
+two-defines.scm:08: LPAREN
+two-defines.scm:08: SYMBOL &lt;let&gt;
+two-defines.scm:08: SYMBOL &lt;loop&gt;
+two-defines.scm:08: LPAREN
+two-defines.scm:08: LPAREN
+two-defines.scm:08: SYMBOL &lt;result&gt;
+two-defines.scm:08: SQUOTE
+two-defines.scm:08: LPAREN
+two-defines.scm:08: RPAREN
+two-defines.scm:08: RPAREN
+two-defines.scm:08: LPAREN
+two-defines.scm:08: SYMBOL &lt;lst&gt;
+two-defines.scm:08: SYMBOL &lt;lst&gt;
+two-defines.scm:08: RPAREN
+two-defines.scm:08: RPAREN
+two-defines.scm:09: LPAREN
+two-defines.scm:09: SYMBOL &lt;if&gt;
+two-defines.scm:09: LPAREN
+two-defines.scm:09: SYMBOL &lt;null?&gt;
+two-defines.scm:09: SYMBOL &lt;lst&gt;
+two-defines.scm:09: RPAREN
+two-defines.scm:10: SYMBOL &lt;result&gt;
+two-defines.scm:11: LPAREN
+two-defines.scm:11: SYMBOL &lt;let*&gt;
+two-defines.scm:11: LPAREN
+two-defines.scm:11: LPAREN
+two-defines.scm:11: SYMBOL &lt;the-car&gt;
+two-defines.scm:11: LPAREN
+two-defines.scm:11: SYMBOL &lt;car&gt;
+two-defines.scm:11: SYMBOL &lt;lst&gt;
+two-defines.scm:11: RPAREN
+two-defines.scm:11: RPAREN
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL &lt;elt&gt;
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL &lt;if&gt;
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL &lt;pair?&gt;
+two-defines.scm:12: SYMBOL &lt;the-car&gt;
+two-defines.scm:12: RPAREN
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL &lt;deep-reverse&gt;
+two-defines.scm:12: SYMBOL &lt;the-car&gt;
+two-defines.scm:12: RPAREN
+two-defines.scm:12: SYMBOL &lt;the-car&gt;
+two-defines.scm:12: RPAREN
+two-defines.scm:12: RPAREN
+two-defines.scm:12: RPAREN
+two-defines.scm:13: LPAREN
+two-defines.scm:13: SYMBOL &lt;loop&gt;
+two-defines.scm:13: LPAREN
+two-defines.scm:13: SYMBOL &lt;cons&gt;
+two-defines.scm:13: SYMBOL &lt;elt&gt;
+two-defines.scm:13: SYMBOL &lt;result&gt;
+two-defines.scm:13: RPAREN
+two-defines.scm:13: LPAREN
+two-defines.scm:13: SYMBOL &lt;cdr&gt;
+two-defines.scm:13: SYMBOL &lt;lst&gt;
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:14: EOF
+</pre><p>But got:</p>
+<pre>two-defines.scm:01: EOF
+</pre>
+<h3>Test 09</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner y-combinator.scm<                                                                     /code><br />
+<pre>y-combinator.scm:01: EOF
+</pre>
+<p><b>Test 09</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>y-combinator.scm:01: LPAREN
+y-combinator.scm:01: SYMBOL &lt;define&gt;
+y-combinator.scm:01: SYMBOL &lt;Y&gt;
+y-combinator.scm:01: LPAREN
+y-combinator.scm:01: SYMBOL &lt;lambda&gt;
+y-combinator.scm:01: LPAREN
+y-combinator.scm:01: SYMBOL &lt;f&gt;
+y-combinator.scm:01: RPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL &lt;lambda&gt;
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL &lt;h&gt;
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL &lt;lambda&gt;
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL &lt;x&gt;
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL &lt;f&gt;
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL &lt;h&gt;
+y-combinator.scm:02: SYMBOL &lt;h&gt;
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: SYMBOL &lt;x&gt;
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: RPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL &lt;lambda&gt;
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL &lt;h&gt;
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL &lt;lambda&gt;
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL &lt;x&gt;
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL &lt;f&gt;
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL &lt;h&gt;
+y-combinator.scm:03: SYMBOL &lt;h&gt;
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: SYMBOL &lt;x&gt;
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:05: LPAREN
+y-combinator.scm:05: SYMBOL &lt;define&gt;
+y-combinator.scm:05: SYMBOL &lt;fact&gt;
+y-combinator.scm:06: LPAREN
+y-combinator.scm:06: SYMBOL &lt;Y&gt;
+y-combinator.scm:06: LPAREN
+y-combinator.scm:06: SYMBOL &lt;lambda&gt;
+y-combinator.scm:06: LPAREN
+y-combinator.scm:06: SYMBOL &lt;f&gt;
+y-combinator.scm:06: RPAREN
+y-combinator.scm:07: LPAREN
+y-combinator.scm:07: SYMBOL &lt;lambda&gt;
+y-combinator.scm:07: LPAREN
+y-combinator.scm:07: SYMBOL &lt;n&gt;
+y-combinator.scm:07: RPAREN
+y-combinator.scm:08: LPAREN
+y-combinator.scm:08: SYMBOL &lt;if&gt;
+y-combinator.scm:08: LPAREN
+y-combinator.scm:08: SYMBOL &lt;=&gt;
+y-combinator.scm:08: SYMBOL &lt;n&gt;
+y-combinator.scm:08: NUMBER &lt;0&gt;
+y-combinator.scm:08: RPAREN
+y-combinator.scm:09: NUMBER &lt;1&gt;
+y-combinator.scm:10: LPAREN
+y-combinator.scm:10: SYMBOL &lt;*&gt;
+y-combinator.scm:10: SYMBOL &lt;n&gt;
+y-combinator.scm:10: LPAREN
+y-combinator.scm:10: SYMBOL &lt;f&gt;
+y-combinator.scm:10: LPAREN
+y-combinator.scm:10: SYMBOL &lt;-&gt;
+y-combinator.scm:10: SYMBOL &lt;n&gt;
+y-combinator.scm:10: NUMBER &lt;1&gt;
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:12: LPAREN
+y-combinator.scm:12: SYMBOL &lt;fact&gt;
+y-combinator.scm:12: NUMBER &lt;12&gt;
+y-combinator.scm:12: RPAREN
+y-combinator.scm:13: EOF
+</pre><p>But got:</p>
+<pre>y-combinator.scm:01: EOF
+</pre>
+<h3>Test 10</h3>
+<code>java -cp scheme.jar org.instructures.interp.TokenScanner error.scm</code><                                                                     br />
+<pre>error.scm:01: EOF
+</pre>
+<p><b>Test 10</b>: <span class="testfail">FAILED</span></p>
+<p>Expected:</p>
+<pre>error.scm:01: Error: Unexpected character: "{"
+error.scm:02: LPAREN
+error.scm:02: Error: Invalid string escape: "\:"
+error.scm:03: Error: Invalid character after "#": #m
+error.scm:04: BOOLEAN &lt;#f&gt;
+error.scm:06: EOF
+</pre><p>But got:</p>
+<pre>error.scm:01: EOF
+</pre>
+<p>
+    Total FAILED: 10<br />
+
+    Total PASSED: 0<br />
+</p><p>
+
+(This submission scored 0 out of 10 points.)
+<br />
+</p></div></body></html>

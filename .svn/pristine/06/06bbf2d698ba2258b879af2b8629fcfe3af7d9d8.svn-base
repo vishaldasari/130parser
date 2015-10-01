@@ -1,0 +1,117 @@
+two-defines.scm:01: LPAREN
+two-defines.scm:01: SYMBOL <define>
+two-defines.scm:01: LPAREN
+two-defines.scm:01: SYMBOL <reverse>
+two-defines.scm:01: SYMBOL <lst>
+two-defines.scm:01: RPAREN
+two-defines.scm:02: LPAREN
+two-defines.scm:02: SYMBOL <let>
+two-defines.scm:02: SYMBOL <loop>
+two-defines.scm:02: LPAREN
+two-defines.scm:02: LPAREN
+two-defines.scm:02: SYMBOL <result>
+two-defines.scm:02: SQUOTE
+two-defines.scm:02: LPAREN
+two-defines.scm:02: RPAREN
+two-defines.scm:02: RPAREN
+two-defines.scm:02: LPAREN
+two-defines.scm:02: SYMBOL <lst>
+two-defines.scm:02: SYMBOL <lst>
+two-defines.scm:02: RPAREN
+two-defines.scm:02: RPAREN
+two-defines.scm:03: LPAREN
+two-defines.scm:03: SYMBOL <if>
+two-defines.scm:03: LPAREN
+two-defines.scm:03: SYMBOL <null?>
+two-defines.scm:03: SYMBOL <lst>
+two-defines.scm:03: RPAREN
+two-defines.scm:04: SYMBOL <result>
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL <loop>
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL <cons>
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL <car>
+two-defines.scm:05: SYMBOL <lst>
+two-defines.scm:05: RPAREN
+two-defines.scm:05: SYMBOL <result>
+two-defines.scm:05: RPAREN
+two-defines.scm:05: LPAREN
+two-defines.scm:05: SYMBOL <cdr>
+two-defines.scm:05: SYMBOL <lst>
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:05: RPAREN
+two-defines.scm:07: LPAREN
+two-defines.scm:07: SYMBOL <define>
+two-defines.scm:07: LPAREN
+two-defines.scm:07: SYMBOL <deep-reverse>
+two-defines.scm:07: SYMBOL <lst>
+two-defines.scm:07: RPAREN
+two-defines.scm:08: LPAREN
+two-defines.scm:08: SYMBOL <let>
+two-defines.scm:08: SYMBOL <loop>
+two-defines.scm:08: LPAREN
+two-defines.scm:08: LPAREN
+two-defines.scm:08: SYMBOL <result>
+two-defines.scm:08: SQUOTE
+two-defines.scm:08: LPAREN
+two-defines.scm:08: RPAREN
+two-defines.scm:08: RPAREN
+two-defines.scm:08: LPAREN
+two-defines.scm:08: SYMBOL <lst>
+two-defines.scm:08: SYMBOL <lst>
+two-defines.scm:08: RPAREN
+two-defines.scm:08: RPAREN
+two-defines.scm:09: LPAREN
+two-defines.scm:09: SYMBOL <if>
+two-defines.scm:09: LPAREN
+two-defines.scm:09: SYMBOL <null?>
+two-defines.scm:09: SYMBOL <lst>
+two-defines.scm:09: RPAREN
+two-defines.scm:10: SYMBOL <result>
+two-defines.scm:11: LPAREN
+two-defines.scm:11: SYMBOL <let*>
+two-defines.scm:11: LPAREN
+two-defines.scm:11: LPAREN
+two-defines.scm:11: SYMBOL <the-car>
+two-defines.scm:11: LPAREN
+two-defines.scm:11: SYMBOL <car>
+two-defines.scm:11: SYMBOL <lst>
+two-defines.scm:11: RPAREN
+two-defines.scm:11: RPAREN
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL <elt>
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL <if>
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL <pair?>
+two-defines.scm:12: SYMBOL <the-car>
+two-defines.scm:12: RPAREN
+two-defines.scm:12: LPAREN
+two-defines.scm:12: SYMBOL <deep-reverse>
+two-defines.scm:12: SYMBOL <the-car>
+two-defines.scm:12: RPAREN
+two-defines.scm:12: SYMBOL <the-car>
+two-defines.scm:12: RPAREN
+two-defines.scm:12: RPAREN
+two-defines.scm:12: RPAREN
+two-defines.scm:13: LPAREN
+two-defines.scm:13: SYMBOL <loop>
+two-defines.scm:13: LPAREN
+two-defines.scm:13: SYMBOL <cons>
+two-defines.scm:13: SYMBOL <elt>
+two-defines.scm:13: SYMBOL <result>
+two-defines.scm:13: RPAREN
+two-defines.scm:13: LPAREN
+two-defines.scm:13: SYMBOL <cdr>
+two-defines.scm:13: SYMBOL <lst>
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:13: RPAREN
+two-defines.scm:14: EOF

@@ -1,0 +1,101 @@
+y-combinator.scm:01: LPAREN
+y-combinator.scm:01: SYMBOL <define>
+y-combinator.scm:01: SYMBOL <Y>
+y-combinator.scm:01: LPAREN
+y-combinator.scm:01: SYMBOL <lambda>
+y-combinator.scm:01: LPAREN
+y-combinator.scm:01: SYMBOL <f>
+y-combinator.scm:01: RPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL <lambda>
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL <h>
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL <lambda>
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL <x>
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL <f>
+y-combinator.scm:02: LPAREN
+y-combinator.scm:02: SYMBOL <h>
+y-combinator.scm:02: SYMBOL <h>
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: SYMBOL <x>
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: RPAREN
+y-combinator.scm:02: RPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL <lambda>
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL <h>
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL <lambda>
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL <x>
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL <f>
+y-combinator.scm:03: LPAREN
+y-combinator.scm:03: SYMBOL <h>
+y-combinator.scm:03: SYMBOL <h>
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: SYMBOL <x>
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:03: RPAREN
+y-combinator.scm:05: LPAREN
+y-combinator.scm:05: SYMBOL <define>
+y-combinator.scm:05: SYMBOL <fact>
+y-combinator.scm:06: LPAREN
+y-combinator.scm:06: SYMBOL <Y>
+y-combinator.scm:06: LPAREN
+y-combinator.scm:06: SYMBOL <lambda>
+y-combinator.scm:06: LPAREN
+y-combinator.scm:06: SYMBOL <f>
+y-combinator.scm:06: RPAREN
+y-combinator.scm:07: LPAREN
+y-combinator.scm:07: SYMBOL <lambda>
+y-combinator.scm:07: LPAREN
+y-combinator.scm:07: SYMBOL <n>
+y-combinator.scm:07: RPAREN
+y-combinator.scm:08: LPAREN
+y-combinator.scm:08: SYMBOL <if>
+y-combinator.scm:08: LPAREN
+y-combinator.scm:08: SYMBOL <=>
+y-combinator.scm:08: SYMBOL <n>
+y-combinator.scm:08: NUMBER <0>
+y-combinator.scm:08: RPAREN
+y-combinator.scm:09: NUMBER <1>
+y-combinator.scm:10: LPAREN
+y-combinator.scm:10: SYMBOL <*>
+y-combinator.scm:10: SYMBOL <n>
+y-combinator.scm:10: LPAREN
+y-combinator.scm:10: SYMBOL <f>
+y-combinator.scm:10: LPAREN
+y-combinator.scm:10: SYMBOL <->
+y-combinator.scm:10: SYMBOL <n>
+y-combinator.scm:10: NUMBER <1>
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:10: RPAREN
+y-combinator.scm:12: LPAREN
+y-combinator.scm:12: SYMBOL <fact>
+y-combinator.scm:12: NUMBER <12>
+y-combinator.scm:12: RPAREN
+y-combinator.scm:13: EOF
